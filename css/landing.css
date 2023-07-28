@@ -159,6 +159,93 @@ header nav > a.highlighted:hover {
     }
 }
 
+/**seccion de programa*/
+.program-section {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lined-heading {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 2rem;
+}
+.heading-line {
+    width: calc(calc(90vw - 410px)/2);
+    height: 1px;
+    background: linear-gradient(270deg, #DB82F1 0%, #FFF 19.79%, #DB82F1 49.48%, #FFF 83.33%, #DB82F1 100%);
+}
+.lined-heading h2 {
+    color: #DB82F1;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.program-section > p{
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.program-container {
+    padding: 3rem 5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 11vw;
+}
+.program-content {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+}
+.program-content h4 {
+    color: #DB82F1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.program-content p {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1000px) {
+    .program-section {
+        padding-top: max(5rem, 6vh);
+        padding-bottom: max(5rem, 6vh);
+    }
+    .program-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .program-content {
+        margin: 0 auto;
+        width: min(90vw, 500px);
+    }
+}
+@media only screen and (max-width: 700px) {
+    .lined-heading h2{
+        max-width: 300px;
+        white-space: normal !important;
+    }
+    .heading-line {
+        width: calc(calc(90vw - 300px)/2);
+    }
+}
+
 /**Burger menu*/
 :root {
     --font-size: 0.7;
