@@ -166,6 +166,7 @@ header nav > a.highlighted:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: max(5rem, 6vh) 0;
 }
 .lined-heading {
     display: flex;
@@ -207,6 +208,10 @@ header nav > a.highlighted:hover {
     align-items: center;
     gap: 1.4rem;
 }
+.program-content img {
+    width: 4.8rem;
+    height: 4.8rem;
+}
 .program-content h4 {
     color: #DB82F1;
     text-align: center;
@@ -221,10 +226,6 @@ header nav > a.highlighted:hover {
     font-weight: 500;
 }
 @media only screen and (max-width: 1000px) {
-    .program-section {
-        padding-top: max(5rem, 6vh);
-        padding-bottom: max(5rem, 6vh);
-    }
     .program-container {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -275,6 +276,7 @@ header nav > a.highlighted:hover {
     gap: 2rem;
     justify-content: center;
     align-items: end;
+    z-index: 2;
 }
 .courses-section .right > div {
     display: flex;
@@ -373,6 +375,122 @@ header nav > a.highlighted:hover {
     }
     .courses-section .right h2 {
         font-size: 4.3rem;
+    }
+}
+
+/**About section*/
+.about-section {
+    width: 100%;
+    min-height: 150vh;
+    padding: max(5rem, 6vh) 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.about-section .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20vw;
+    gap: 2rem;
+}
+.about-section .top h2 {
+    color: #02FFD9;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+}
+.about-section .top p {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.about-section .top a {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    border: 2px solid #02FFD9;
+    padding: 1rem 1.8rem;
+    transition: all 0.5s;
+}
+.about-section .top a:hover {
+    background-color: #02FFD9;
+    color: #000;
+}
+
+.section-inner-separator {
+    width: min(100rem, 90vw);
+    height: 0.1rem;
+    background: linear-gradient(270deg, #02FFD9 0%, #FFF 19.79%, #02FFD9 49.48%, #FFF 83.33%, #02FFD9 100%);
+}
+
+.values {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+.values > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15vw;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+.before-values {
+    background-image: url('../res/bgs/antes-bg.svg');
+    background-position: left center;
+}
+.after-values {
+    background-image: url('../res/bgs/despues-bg.svg');
+    background-position: right center;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 1.7rem 3vw;
+}
+.value img {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.value h4 {
+    color: #02FFD9;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.value p {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1000px) {
+    .values > div {
+        background-image: none !important;
+        width: min(350px, 90vw);
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .about-section .top {
+        padding: 0 5vw;
     }
 }
 
