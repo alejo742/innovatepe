@@ -13,7 +13,7 @@ sendButton.addEventListener('click', ()=> {
     const messageArea = document.getElementById('message-input');
 
 
-    const email = "mailto:elcorreoquequieres@correo.com?Subject="
+    const email = "mailto:innovatechperuong@gmail.com?Subject="
 
     var subject = `${encodeURIComponent(subjectInput.value)}&body=`
     var message = encodeURIComponent("Hola, soy " + nameInput.value + " y quisiera comentarles lo siguiente: \n\n" + messageArea.value)
