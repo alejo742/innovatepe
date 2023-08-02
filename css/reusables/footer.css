@@ -1,0 +1,43 @@
+:root {
+    --colorPrimario: #000;
+    --colorSecundario: #fff;
+    --acento1: #02FFD9;
+    --acento2: #555EE1;
+    --acento3: #754FE2;
+    --acento4: #DB82F1;
+}
+
+*{
+    font-family: 'Lato';
+    color: #fff;
+}
+
+
+/**Footer*/
+footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5rem 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .left {
+    display: flex;
+    align-items: center;
+}
+footer .left span {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+footer .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2.4rem;
+}
+footer .right img {
+    width: 45px;
+    height: 45px;
+}
