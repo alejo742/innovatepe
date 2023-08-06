@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Innovatech"; 
+    src: url('../font/BigerOver-ywyr3.ttf') format('truetype');
+}
+:root {
+    --colorPrimario: #000;
+    --colorSecundario: #fff;
+    --acento1: #02FFD9;
+    --acento2: #555EE1;
+    --acento3: #754FE2;
+    --acento4: #DB82F1;
+}
+
+*{
+    font-family: 'Lato';
+    color: #fff;
+}
+body {
+    background-color: #000;
+}
+
+.hero-section {
+    width: 100%;
+    background-image: url('../res/bgs/kids-laptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-container {
+    width: 100%;
+    min-height: 45vh;
+    padding: 2rem 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.hero-section h1 {
+    color: #FFF;
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 800px) {
+    .hero-section h1 {
+        font-size: 6.5rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .hero-section h1 {
+        font-size: 5.5rem;
+    }
+}
+
+/**Mision y vision*/
+.mission-section, .vision-section {
+    width: 100%;
+    padding: 10rem 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.mission-section {
+    justify-content: start;
+}
+.vision-section {
+    justify-content: end;
+}
+.mission-section .picture-overlay, .vision-section .picture-overlay {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mission-section .picture-overlay {
+    background-image: url('../res/aboutus/bullseye-image.png');
+    right: -5vw;
+    transform: translateY(-50%) scaleX(-1);
+}
+.vision-section .picture-overlay {
+    background-image: url('../res/aboutus/purple-eye-image.png');
+    left: -5vw;
+}
+.mission-section .text-container, .vision-section .text-container {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 2;
+}
+.mission-section .text-container {
+    align-items: start;
+}
+.vision-section .text-container {
+    align-items: end;
+}
+
+.mission-section h2, .vision-section h2 {
+    color: #754FE2;
+    font-size: 6rem;
+    font-weight: 700;
+}
+.mission-section p, .vision-section p {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500; 
+}
+@media only screen and (max-width: 900px) {
+    .mission-section .picture-overlay, .vision-section .picture-overlay {
+        opacity: 0.2;
+        left: 50% !important;
+        right: initial !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .mission-section .text-container, .vision-section .text-container {
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .mission-section, .vision-section {
+        padding: 10rem 10vw;
+    }
+    .mission-section h2, .vision-section h2 {
+        text-align: center !important;
+    }
+    .mission-section p, .vision-section p {
+        text-align: center !important;
+        font-size: 1.8rem;
+    }
+}
