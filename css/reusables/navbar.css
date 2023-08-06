@@ -27,6 +27,7 @@ header .left {
     display: flex;
     align-items: center;
     gap: 1.5vw;
+    cursor: pointer;
 }
 header img {
     height: 60%;
