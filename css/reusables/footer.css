@@ -41,3 +41,13 @@ footer .right img {
     width: 45px;
     height: 45px;
 }
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 3rem 5vw;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    footer .left span {
+        text-align: center;
+    }
+}
